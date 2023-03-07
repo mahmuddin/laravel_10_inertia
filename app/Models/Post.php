@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
+
+    /**
+     * fillable
+     *
+     * @var array
+     */
+
+    protected $fillabel = [
+        'title', 'content'
+    ];
 }
